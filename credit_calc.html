@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculators</title>
+    <link rel="stylesheet" href="css/style_scredit_calc.css">
+</head>
+<body>
+    <div class="credit_calc">
+
+        <div class="form_input">
+
+            <div class="form_summ">
+
+                <div class="text_summ">Сумма кредита</div>
+
+                <div class="input_selector_summ">
+
+                    <input value="1000000" type="number" class="input_summ" id="input_summ">
+
+                    <div class="style_select">
+                    
+                        <select name="currency" class="select_currency">
+                            
+                            <option value="₽">₽</option>
+                            <option value="$">$</option>
+                            <option value="€">€</option>
+
+                        </select>
+
+                    </div>
+                    <!-- <div>&#8743 &#8744</div> (\22C1 \22C0) стрелки вниз, вверх -->
+                </div>
+
+                
+
+                <input type="range" class="horizontal_scroll" min="1" max="211">
+                <!-- setAttribute('step', 10000)-->
+                <!-- <datalist class="range_list" id="range_marks">
+
+                    <option class="pointer" value="1">0</option>
+                    <option class="pointer" value="2">10000</option>
+                    <option class="pointer" value="3">20000</option>
+                    <option class="pointer" value="4">30000</option>
+                    <option class="pointer" value="5">40000</option>
+                    <option class="pointer" value="6">50000</option>
+                    <option class="pointer" value="7">60000</option>
+                    <option class="pointer" value="8">70000</option>
+                    <option class="pointer" value="9">80000</option>
+                    <option class="pointer" value="10">90000</option>
+                    <option class="pointer" value="11">100000</option>
+                    <option class="pointer" value="12">110000</option>
+                    <option class="pointer" value="13">120000</option>
+                    <option class="pointer" value="14">130000</option>
+                    <option class="pointer" value="15">140000</option>
+                    <option class="pointer" value="16">150000</option>
+                    <option class="pointer" value="17">160000</option>
+                    <option class="pointer" value="18">170000</option>
+                    <option class="pointer" value="19">180000</option>
+                    <option class="pointer" value="20">190000</option>
+                    <option class="pointer" value="21">200000</option>
+                    <option class="pointer" value="22">250000</option>
+                    <option class="pointer" value="23">300000</option>
+                    <option class="pointer" value="24">350000</option>
+                    <option class="pointer" value="25">400000</option>
+                    <option class="pointer" value="26">450000</option>
+                    <option class="pointer" value="27">500000</option>
+                    <option class="pointer" value="28">550000</option>
+                    <option class="pointer" value="29">600000</option>
+                    <option class="pointer" value="30">650000</option>
+                    <option class="pointer" value="31">700000</option>
+                    <option class="pointer" value="32">750000</option>
+                    <option class="pointer" value="33">800000</option>
+                    <option class="pointer" value="34">850000</option>
+                    <option class="pointer" value="35">900000</option>
+                    <option class="pointer" value="36">950000</option>
+                    <option class="pointer" value="37">1000000</option>
+                    <option class="pointer" value="38">1100000</option>
+                    <option class="pointer" value="39">1200000</option>
+                    <option class="pointer" value="40">1300000</option>
+                    <option class="pointer" value="41">1400000</option>
+                    <option class="pointer" value="42">1500000</option>
+                    <option class="pointer" value="43">1600000</option>
+                    <option class="pointer" value="44">1700000</option>
+                    <option class="pointer" value="45">1800000</option>
+                    <option class="pointer" value="46">1900000</option>
+                    <option class="pointer" value="47">2000000</option>
+                    <option class="pointer" value="48">2100000</option>
+                    <option class="pointer" value="49">2200000</option>
+                    <option class="pointer" value="50">2300000</option>
+                    <option class="pointer" value="51">2400000</option>
+                    <option class="pointer" value="52">2500000</option>
+                    <option class="pointer" value="53">2600000</option>
+                    <option class="pointer" value="54">2700000</option>
+                    <option class="pointer" value="55">2800000</option>
+                    <option class="pointer" value="56">2900000</option>
+                    <option class="pointer" value="57">3000000</option>
+                    <option class="pointer" value="58">3100000</option>
+                    <option class="pointer" value="59">3200000</option>
+                    <option class="pointer" value="60">3300000</option>
+                    <option class="pointer" value="61">3400000</option>
+                    <option class="pointer" value="62">3500000</option>
+                    <option class="pointer" value="63">3600000</option>
+                    <option class="pointer" value="64">3700000</option>
+                    <option class="pointer" value="65">3800000</option>
+                    <option class="pointer" value="66">3900000</option>
+                    <option class="pointer" value="67">4000000</option>
+                    <option class="pointer" value="68">4100000</option>
+                    <option class="pointer" value="69">4200000</option>
+                    <option class="pointer" value="70">4300000</option>
+                    <option class="pointer" value="71">4400000</option>
+                    <option class="pointer" value="72">4500000</option>
+                    <option class="pointer" value="73">4600000</option>
+                    <option class="pointer" value="74">4700000</option>
+                    <option class="pointer" value="75">4800000</option>
+                    <option class="pointer" value="76">4900000</option>
+                    <option class="pointer" value="77">5000000</option>
+                    <option class="pointer" value="78">5100000</option>
+                    <option class="pointer" value="79">5200000</option>
+                    <option class="pointer" value="80">5300000</option>
+                    <option class="pointer" value="81">5400000</option>
+                    <option class="pointer" value="82">5500000</option>
+                    <option class="pointer" value="83">5600000</option>
+                    <option class="pointer" value="84">5700000</option>
+                    <option class="pointer" value="85">5800000</option>
+                    <option class="pointer" value="86">5900000</option>
+                    <option class="pointer" value="87">6000000</option>
+                    <option class="pointer" value="88">6100000</option>
+                    <option class="pointer" value="89">6200000</option>
+                    <option class="pointer" value="90">6300000</option>
+                    <option class="pointer" value="91">6400000</option>
+                    <option class="pointer" value="92">6500000</option>
+                    <option class="pointer" value="93">6600000</option>
+                    <option class="pointer" value="94">6700000</option>
+                    <option class="pointer" value="95">6800000</option>
+                    <option class="pointer" value="96">6900000</option>
+                    <option class="pointer" value="97">7000000</option>
+                    <option class="pointer" value="98">7100000</option>
+                    <option class="pointer" value="99">7200000</option>
+                    <option class="pointer" value="100">7300000</option>
+                    <option class="pointer" value="101">7400000</option>
+                    <option class="pointer" value="102">7500000</option>
+                    <option class="pointer" value="103">7600000</option>
+                    <option class="pointer" value="104">7700000</option>
+                    <option class="pointer" value="105">7800000</option>
+                    <option class="pointer" value="106">7900000</option>
+                    <option class="pointer" value="107">8000000</option>
+                    <option class="pointer" value="108">8100000</option>
+                    <option class="pointer" value="109">8200000</option>
+                    <option class="pointer" value="110">8300000</option>
+                    <option class="pointer" value="111">8400000</option>
+                    <option class="pointer" value="112">8500000</option>
+                    <option class="pointer" value="113">8600000</option>
+                    <option class="pointer" value="114">8700000</option>
+                    <option class="pointer" value="115">8800000</option>
+                    <option class="pointer" value="116">8900000</option>
+                    <option class="pointer" value="117">9000000</option>
+                    <option class="pointer" value="118">9100000</option>
+                    <option class="pointer" value="119">9200000</option>
+                    <option class="pointer" value="120">9300000</option>
+                    <option class="pointer" value="121">9400000</option>
+                    <option class="pointer" value="122">9500000</option>
+                    <option class="pointer" value="123">9600000</option>
+                    <option class="pointer" value="124">9700000</option>
+                    <option class="pointer" value="125">9800000</option>
+                    <option class="pointer" value="126">9900000</option>
+                    <option class="pointer" value="127">10000000</option>
+                    <option class="pointer" value="128">20000000</option>
+                    <option class="pointer" value="129">30000000</option>
+                    <option class="pointer" value="130">40000000</option>
+                    <option class="pointer" value="131">50000000</option>
+                    <option class="pointer" value="132">60000000</option>
+                    <option class="pointer" value="133">70000000</option>
+                    <option class="pointer" value="134">80000000</option>
+                    <option class="pointer" value="135">90000000</option>
+                    <option class="pointer" value="137">100000000</option>
+                    <option class="pointer" value="138">100000000</option>
+                    <option class="pointer" value="139">100000000</option>
+                    <option class="pointer" value="140">100000000</option>
+                    <option class="pointer" value="141">100000000</option>
+                    <option class="pointer" value="142">100000000</option>
+                    <option class="pointer" value="143">100000000</option>
+                    <option class="pointer" value="144">100000000</option>
+                    <option class="pointer" value="145">100000000</option>
+                    <option class="pointer" value="146">100000000</option>
+                    <option class="pointer" value="147">100000000</option>
+                    <option class="pointer" value="148">100000000</option>
+                    <option class="pointer" value="149">100000000</option>
+                    <option class="pointer" value="140">100000000</option>
+                    <option class="pointer" value="151">100000000</option>
+                    <option class="pointer" value="152">100000000</option>
+                    <option class="pointer" value="153">100000000</option>
+                    <option class="pointer" value="154">100000000</option>
+                    <option class="pointer" value="155">100000000</option>
+                    <option class="pointer" value="156">100000000</option>
+                    <option class="pointer" value="157">100000000</option>
+                    <option class="pointer" value="158">100000000</option>
+                    <option class="pointer" value="159">100000000</option>
+                    <option class="pointer" value="160">100000000</option>
+                    <option class="pointer" value="161">100000000</option>
+                    <option class="pointer" value="162">100000000</option>
+                    <option class="pointer" value="163">100000000</option>
+                    <option class="pointer" value="164">100000000</option>
+                    <option class="pointer" value="165">100000000</option>
+                    <option class="pointer" value="166">100000000</option>
+                    <option class="pointer" value="167">100000000</option>
+                    <option class="pointer" value="168">100000000</option>
+                    <option class="pointer" value="169">100000000</option>
+                    <option class="pointer" value="170">100000000</option>
+                    <option class="pointer" value="171">100000000</option>
+                    <option class="pointer" value="172">100000000</option>
+                    <option class="pointer" value="173">100000000</option>
+                    <option class="pointer" value="174">100000000</option>
+                    <option class="pointer" value="175">100000000</option>
+                    <option class="pointer" value="176">100000000</option>
+                    <option class="pointer" value="177">100000000</option>
+                    <option class="pointer" value="178">100000000</option>
+                    <option class="pointer" value="179">100000000</option>
+                    <option class="pointer" value="180">100000000</option>
+                    <option class="pointer" value="181">100000000</option>
+                    <option class="pointer" value="182">100000000</option>
+                    <option class="pointer" value="183">100000000</option>
+                    <option class="pointer" value="184">100000000</option>
+                    <option class="pointer" value="185">100000000</option>
+                    <option class="pointer" value="186">100000000</option>
+                    <option class="pointer" value="187">100000000</option>
+                    <option class="pointer" value="188">100000000</option>
+                    <option class="pointer" value="189">100000000</option>
+                    <option class="pointer" value="190">100000000</option>
+                    <option class="pointer" value="191">100000000</option>
+                    <option class="pointer" value="192">100000000</option>
+                    <option class="pointer" value="193">100000000</option>
+                    <option class="pointer" value="194">100000000</option>
+                    <option class="pointer" value="195">100000000</option>
+                    <option class="pointer" value="196">100000000</option>
+                    <option class="pointer" value="197">100000000</option>
+                    <option class="pointer" value="198">100000000</option>
+                    <option class="pointer" value="199">100000000</option>
+                    <option class="pointer" value="200">100000000</option>
+                    <option class="pointer" value="201">100000000</option>
+                    <option class="pointer" value="202">100000000</option>
+                    <option class="pointer" value="203">100000000</option>
+                    <option class="pointer" value="204">100000000</option>
+                    <option class="pointer" value="205">100000000</option>
+                    <option class="pointer" value="206">100000000</option>
+                    <option class="pointer" value="207">100000000</option>
+                    <option class="pointer" value="208">100000000</option>
+                    <option class="pointer" value="209">100000000</option>
+                    <option class="pointer" value="210">100000000</option>
+                </datalist> -->
+
+            </div>
+
+            <div class="form_parametrs">
+
+                <div class="form_term">
+
+                    <div class="text_term">Срок</div>
+
+                    <select name="terms" class="shose_term">
+                        <option value="1">1 месяц</option>
+                        <option value="3">3 месяца</option>
+                        <option value="6">6 месяцев</option>
+                        <option value="9">9 месяцев</option>
+                        <option value="12">1 год</option>
+                        <option value="18">1.5 года</option>
+                        <option value="24">2 года</option>
+                        <option value="36">3 года</option>
+                        <option value="48">4 года</option>
+                        <option value="60">5 лет</option>
+                        <option value="72">6 лет</option>
+                        <option value="84">7 лет</option>
+                        <option value="120">10 лет</option>
+                        <option value="180">15 лет</option>
+                        <option value="240">20 лет</option>
+                        <option value="300">25 лет</option>
+                        <option value="360">30 лет</option>
+                    </select>
+
+                </div>
+
+                <div class="form_bet">
+
+                    <div class="text_bet">Ставка, %</div>
+                    <input value="13" type="number" class="input_bet">
+
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="form_output">
+
+            <div class="values_and_border">
+
+                <div class="values">
+                    <div class="circle1"></div>
+                    <div class="text_value1">Кредит</div>
+                    <div class="circle2"></div>
+                    <div class="text_value2">Переплата</div>
+                </div>
+
+                <div class="border_result">
+                    <div id="credit_border" style="width: 100%" class="credit_border"></div>
+                    <div id="overpayment_border" class="overpayment_border"></div>
+                    <!-- style="width: 100%"
+                    style="width: 50%;"  -->
+                </div>
+                
+            </div>
+
+            <div class="calc_result">
+
+                <div class="text_calc_result">Результаты расчёта</div>
+
+                <div class="results">
+
+                    <div class="monthly_payment">Ежемесячный платеж</div>
+                    <input readonly type="text" class="output_result monthly_payment_result"></input>
+                    <!--oninput="monthly_payment()"-->
+                </div>
+
+                <div class="results">
+
+                    <div class="overpayment">Переплата по кредиту</div>
+                    <input readonly type="text" id="overpayment_result" class="output_result overpayment_result"></input>
+                    <!--oninput="overpayment()"-->
+                </div>
+
+                <div class="results">
+
+                    <div class="total_payout">Общая выплата</div>
+                    <input readonly type="text" class="output_result total_payout_result"></input>
+                    <!--oninput="total_payout()"-->
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="/JS/cript.js"></script>
+</body>
+</html>
